@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{category.title}}</h1>
+<div class="category">
+    <img class="category-image" src="{{ category.featured_image.url }}">
+    <h1 class="category-heading">{{category.title}}</h1>
+</div>
 {% endblock content %}
