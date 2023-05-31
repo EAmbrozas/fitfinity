@@ -2,4 +2,12 @@
 
 {% block content %}
 <h1>Home</h1>
+
+<div>
+    {% for category in categories %}
+        <div>
+            <h2>{{category.id}} {{category.Title}}</h2>
+        </div>
+    {% endfor %}
+</div>
 {% endblock content %}
