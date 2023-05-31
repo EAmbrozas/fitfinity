@@ -10,9 +10,9 @@ categories = [
 
 def home(request):
     context = {'categories': categories}
-    return render(request, 'home.html', context)
+    return render(request, 'blog/home.html', context)
 
 
 def category(request):
     context = {'categories': categories}
-    return render(request, 'category.html', context)
+    return render(request, 'blog/category.html', context)
