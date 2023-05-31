@@ -3,10 +3,13 @@
 {% block content %}
 <h1>Home</h1>
 
-<div>
+<div class="categories">
     {% for category in categories %}
-        <div>
-            <a href="{% url 'category' category.id %}"><h2>{{category.id}} {{category.Title}}</h2></a>
+        <div class="category-card">
+            <a href="{% url 'category' category.id %}">
+                <img class="category-card-image" src="{{ category.featured_image.url }}">
+                <h3 class="category-card-heading">{{ category.title }}</h3>
+            </a>
         </div>
     {% endfor %}
 </div>

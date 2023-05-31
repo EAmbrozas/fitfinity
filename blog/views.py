@@ -1,22 +1,14 @@
 from django.shortcuts import render
-
-
-categories = [
-    {'id': 1, 'Title': 'All about training'},
-    {'id': 2, 'Title': 'All about exercises'},
-    {'id': 3, 'Title': 'All about diet'},
-]
+from .models import Category
 
 
 def home(request):
+    categories = Category.objects.all()
     context = {'categories': categories}
     return render(request, 'blog/home.html', context)
 
 
 def category(request, pk):
-    category = None
-    for i in categories:
-        if i['id'] == int(pk):
-            category = i
+    category = Category.objects.get(id=pk)
     context = {'category': category}
     return render(request, 'blog/category.html', context)
