@@ -13,6 +13,10 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
-def category(request):
-    context = {'categories': categories}
+def category(request, pk):
+    category = None
+    for i in categories:
+        if i['id'] == int(pk):
+            category = i
+    context = {'category': category}
     return render(request, 'blog/category.html', context)
