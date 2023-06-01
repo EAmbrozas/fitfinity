@@ -12,6 +12,17 @@
 <body>
     {% include 'navbar.html' %}
     
+    <section class="hero-image" style="background-image: url('{% static 'images/banner.jpg' %}');">
+        <div class="hero-backgorund">
+            <div class="hero-text">
+                <h1 class="hero-heading">FitFinity</h1>
+                <p class="hero-p">
+                    The largest bodybuilding portal
+                </p>
+            </div>
+        </div>
+    </section>
+    
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
