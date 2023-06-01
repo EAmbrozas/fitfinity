@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Category
+from .models import Category, Post
 
 
 def home(request):
@@ -9,6 +9,9 @@ def home(request):
 
 
 def category(request, pk):
-    category = Category.objects.get(id=pk)
-    context = {'category': category}
+    category = Category.objects.get(pk=pk)
+    posts = Post.objects.filter(category__pk=pk)
+    print(category)
+    print(posts)
+    context = {'category': category, 'posts': posts}
     return render(request, 'blog/category.html', context)

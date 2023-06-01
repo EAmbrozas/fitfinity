@@ -5,4 +5,18 @@
     <img class="category-image" src="{{ category.featured_image.url }}">
     <h1 class="category-heading">{{category.title}}</h1>
 </div>
+
+<div class="posts">
+    {% for post in posts %}
+    <div>
+        <div class="post-card">
+            <a href="#">
+                <img class="post-card-image" src="{{ post.featured_image.url }}">
+            </a>
+        </div>
+        <h3 class="post-card-title">{{ post.title }}{{post.id}}</h3>
+        <p>{{post.content}}</p>
+    </div>
+    {% endfor %}
+</div>
 {% endblock content %}
