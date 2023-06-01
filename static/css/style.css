@@ -91,6 +91,8 @@ nav {
     font-size: 32px;
     letter-spacing: 2px;
     color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 5px;
 }
 
 .hero-p {
@@ -100,6 +102,7 @@ nav {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: whitesmoke;
+    padding-top: 5px;
 }
 
 /* Categories section */
@@ -324,3 +327,52 @@ input {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Media ----------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .nav-wrapper, 
+    .categories-wrapper,
+    .post-wrapper {
+        width: 800px;
+        
+    }
+
+    .category-card,
+    .post-card {
+        height: 400px;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+    .nav-wrapper, 
+    .categories-wrapper,
+    .post-wrapper {
+        width: 90vw;
+        
+    }
+
+    .category-card,
+    .post-card {
+        height: 400px;
+    }
+
+    .categories,
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media only screen and (max-width: 550px) {
+    .categories,
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-wrapper, 
+    .categories-wrapper,
+    .post-wrapper {
+        width: 95vw;
+        
+    }
+  }
