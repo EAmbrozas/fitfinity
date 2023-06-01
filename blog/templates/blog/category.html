@@ -6,17 +6,22 @@
     <h1 class="category-heading">{{category.title}}</h1>
 </div>
 
-<div class="posts">
-    {% for post in posts %}
-    <div>
-        <div class="post-card">
-            <a href="#">
-                <img class="post-card-image" src="{{ post.featured_image.url }}">
-            </a>
-        </div>
-        <h3 class="post-card-title">{{ post.title }}{{post.id}}</h3>
-        <p>{{post.content}}</p>
-    </div>
-    {% endfor %}
+<div class="categories-header">
+    <h2>Everything about {{category.title}}</h2>
+    <i class="fa-solid fa-chevron-down arrow"></i>
 </div>
+
+<div class="post-wrapper">
+    <div class="posts">
+        {% for post in posts %}
+            <div class="post-card">
+                <a href="{% url 'category' category.id %}">
+                    <img class="post-card-image" src="{{ post.featured_image.url }}">
+                    <h3 class="post-card-heading">{{ post.title }}</h3>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock content %}
