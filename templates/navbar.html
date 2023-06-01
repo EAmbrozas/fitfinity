@@ -1,7 +1,14 @@
 <nav>
     <div class="nav-wrapper">
         <a class="logo" href="{% url 'home' %}">FitFinity</a>
-        <a class="login" href="#">Login</a>
+        {% if user.is_authenticated %}
+        <a class="login" href="{% url 'account_logout' %}">Logout</a>
+        {% else %}
+        <div>
+            <a class="login" href="{% url 'account_login' %}">Login</a>
+            <a class="login" href="{% url 'account_signup' %}">Register</a>
+        </div>
+        {% endif %}
     </div>
 </nav>
 <br>
