@@ -247,3 +247,36 @@ td {
     color: whitesmoke;
     padding: 5px 20px;
 }
+
+/* Post template */
+
+.post {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 50px;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-heading {
+    position: absolute;
+    bottom: 50%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 20px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 42px;
+}
+
+.table .table-border {
+    width: 200px;
+}

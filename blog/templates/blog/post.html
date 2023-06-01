@@ -1,1 +1,18 @@
-<h1>{{post.title}}</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="post">
+    <img class="post-image" src="{{ post.featured_image.url }}">
+    <h1 class="post-heading">{{post.title}}</h1>
+</div>
+
+<div class="post-header">
+    <h2>Everything about {{post.title}}</h2>
+    <i class="fa-solid fa-chevron-down arrow"></i>
+</div>
+
+<div class="post-wrapper">
+    <p>{{post.content | safe}}</p>
+</div>
+
+{% endblock content %}
