@@ -15,7 +15,7 @@
     <div class="posts">
         {% for post in posts %}
             <div class="post-card">
-                <a href="{% url 'category' category.id %}">
+                <a href="{% url 'post' post.id %}">
                     <img class="post-card-image" src="{{ post.featured_image.url }}">
                     <h3 class="post-card-heading">{{ post.title }}</h3>
                 </a>

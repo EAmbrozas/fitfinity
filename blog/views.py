@@ -15,3 +15,9 @@ def category(request, pk):
     print(posts)
     context = {'category': category, 'posts': posts}
     return render(request, 'blog/category.html', context)
+
+
+def post(request, pk):
+    post = Post.objects.get(pk=pk)
+    context = {'post': post}
+    return render(request, 'blog/post.html', context)
