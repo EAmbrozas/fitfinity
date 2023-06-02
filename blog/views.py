@@ -18,6 +18,14 @@ def category(request, pk):
 def post(request, pk):
     post = Post.objects.get(pk=pk)
     comments = Comment.objects.filter(post__pk=pk)
+
+    if request.method == 'POST':
+        comment = Comment.objects.create(
+            user=request.user,
+            post=post,
+            body=request.POST.get('body')
+        )
+        return redirect('post', pk=post.pk)
     context = {'post': post, 'comments': comments}
     return render(request, 'blog/post.html', context)
 
