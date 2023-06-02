@@ -314,9 +314,22 @@ td {
     text-decoration: underline;
 }
 
+.form-wrapper {
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+
+.comment-form {
+    background-color: rgb(12, 12, 12);
+    width: 320px;
+    padding: 20px;
+    width: 450px;
+}
+
 /* Signin, signup and register forms */
 .form {
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(12, 12, 12);
     width: 320px;
     margin: auto;
     padding: 20px;
@@ -363,7 +376,9 @@ input {
 @media only screen and (max-width: 1200px) {
     .nav-wrapper, 
     .categories-wrapper,
-    .post-wrapper {
+    .post-wrapper,
+    .comment-wrapper,
+    .form-wrapper {
         width: 800px;
         
     }
@@ -377,7 +392,9 @@ input {
 @media only screen and (max-width: 900px) {
     .nav-wrapper, 
     .categories-wrapper,
-    .post-wrapper {
+    .post-wrapper,
+    .comment-wrapper,
+    .form-wrapper {
         width: 90vw;
         
     }
@@ -401,8 +418,13 @@ input {
 
     .nav-wrapper, 
     .categories-wrapper,
-    .post-wrapper {
+    .post-wrapper,
+    .comment-wrapper,
+    .form-wrapper {
         width: 95vw;
-        
+    }
+
+    .comment-form {
+        width: 100%;
     }
   }
