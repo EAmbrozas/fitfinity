@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Category, Post, Comment
+from .forms import CommentForm
 
 
 def home(request):
@@ -34,3 +35,11 @@ def comment(request, pk):
     comment = Comment.objects.get(pk=pk)
     context = {'comment': comment}
     return render(request, 'blog/post.html', context)
+
+
+def deleteComment(request, pk):
+    comment = Comment.objects.get(id=pk)
+    if request.method == 'POST':
+        comment.delete()
+        return redirect('home')
+    return render(request, 'blog/delete.html', {'obj': comment})

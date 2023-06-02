@@ -322,7 +322,7 @@ td {
 
 .comment-form {
     background-color: rgb(12, 12, 12);
-    width: 320px;
+    max-width: 450px;
     padding: 20px;
     width: 450px;
 }
@@ -332,10 +332,14 @@ td {
     float: right;
 }
 
+.delete-btn {
+    display: block;
+}
+
 /* Signin, signup and register forms */
 .form {
     background-color: rgb(12, 12, 12);
-    width: 320px;
+    max-width: 450px;
     margin: auto;
     padding: 20px;
 }
