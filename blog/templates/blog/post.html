@@ -15,4 +15,15 @@
     <p>{{post.content | safe}}</p>
 </div>
 
+<div class="comment-wrapper">
+    <h4 class="comment-header">Comments</h4>
+    <hr class="comment-linebreak">
+    {% for comment in comments %}
+        <div class="comment">
+            <small class="comment-details">{{comment.user}} -- posted  {{comment.created_on | timesince}} ago</small>
+            <p class="comment-body">{{comment.body}}</p>
+        </div>
+    {% endfor %}
+</div>
+
 {% endblock content %}
