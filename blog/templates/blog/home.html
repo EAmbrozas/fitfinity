@@ -12,7 +12,7 @@
         {% for category in categories %}
             <div class="category-card">
                 <a href="{% url 'category' category.id %}">
-                    <img class="category-card-image" src="{{ category.featured_image.url }}">
+                    <img class="category-card-image" src="{{ category.featured_image.url }}" alt="category-image">
                     <h3 class="category-card-heading">{{ category.title }}</h3>
                 </a>
             </div>

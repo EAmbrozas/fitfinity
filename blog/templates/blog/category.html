@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="category">
-    <img class="category-image" src="{{ category.featured_image.url }}">
+    <img class="category-image" src="{{ category.featured_image.url }}" alt="category-image">
     <h1 class="category-heading">{{category.title}}</h1>
 </div>
 
@@ -16,7 +16,7 @@
         {% for post in posts %}
             <div class="post-card">
                 <a href="{% url 'post' post.id %}">
-                    <img class="post-card-image" src="{{ post.featured_image.url }}">
+                    <img class="post-card-image" src="{{ post.featured_image.url }}" alt="post-image">
                     <h3 class="post-card-heading">{{ post.title }}</h3>
                 </a>
             </div>
