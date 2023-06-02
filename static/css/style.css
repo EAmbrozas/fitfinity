@@ -327,6 +327,11 @@ td {
     width: 450px;
 }
 
+.delete-comment {
+    color: orange;
+    float: right;
+}
+
 /* Signin, signup and register forms */
 .form {
     background-color: rgb(12, 12, 12);

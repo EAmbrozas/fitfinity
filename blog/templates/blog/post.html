@@ -20,7 +20,12 @@
     <hr class="comment-linebreak">
     {% for comment in comments %}
         <div class="comment">
-            <small class="comment-details">{{comment.user}} -- posted  {{comment.created_on | timesince}} ago</small>
+            <small class="comment-details">
+                {{comment.user}} -- posted  {{comment.created_on | timesince}} ago
+                {% if request.user == comment.user %}
+                <a class="delete-comment" href="{#}"><i class="fa-solid fa-trash"></i></a>
+                {% endif %}
+            </small>
             <p class="comment-body">{{comment.body}}</p>
         </div>
     {% endfor %}
