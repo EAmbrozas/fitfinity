@@ -334,6 +334,7 @@ td {
 
 .delete-btn {
     display: block;
+    margin: auto;
 }
 
 /* Signin, signup and register forms */
@@ -378,6 +379,30 @@ input {
     font-weight: 500;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(12, 12, 12);
+}
+
+.copyright p {
+    color: whitesmoke;
+    margin: 0;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.copyright p i{
+    font-size: 16px;
 }
 
 /* Media ----------------------------------------------- */
