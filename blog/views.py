@@ -37,6 +37,20 @@ def comment(request, pk):
     return render(request, 'blog/post.html', context)
 
 
+def updateComment(request, pk):
+    comment = Comment.objects.get(id=pk)
+    form = CommentForm(instance=comment)
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST, instance=comment)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+
+    context = {'form': form}
+    return render(request, 'blog/update.html', context)
+
+
 def deleteComment(request, pk):
     comment = Comment.objects.get(id=pk)
     if request.method == 'POST':

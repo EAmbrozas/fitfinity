@@ -327,7 +327,8 @@ td {
     width: 450px;
 }
 
-.delete-comment {
+.delete-comment,
+.edit-comment {
     color: orange;
     float: right;
 }

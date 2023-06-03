@@ -24,6 +24,7 @@
                 {{comment.user}} -- posted  {{comment.created_on | timesince}} ago
                 {% if request.user == comment.user %}
                 <a class="delete-comment" href="{% url 'delete-comment' comment.id %}"><i class="fa-solid fa-trash"></i></a>
+                <a class="edit-comment" href="{% url 'update-comment' comment.id %}"><i class="fa-solid fa-pen-to-square"></i></a>
                 {% endif %}
             </small>
             <p class="comment-body">{{comment.body}}</p>
