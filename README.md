@@ -133,6 +133,11 @@ ___
             <li>Contains a form confimation for deleting a comment with a button to confirm and a link to send the user back to previous page.</li>
         </ul>
     </li>
+    <li id="update">Update Page
+        <ul>
+            <li>Contains a form for updating a comment with a button to confirm and a link to send the user back to previous page.</li>
+        </ul>
+    </li>
 <br>
 
 <div id="design">
