@@ -3,10 +3,11 @@
 {% block content %}
 
 <div>
-    <form class="form" method="POST" action="">
+    <form class="form update-form" method="POST" action="">
         {% csrf_token %}
-        {{form.as_p}}
-        <input type="submit" value="Submit">
+        {{form}}
+        <input class="form-btn delete-btn" type="submit" value="Submit">
+        <a class="form-link" href="{{request.META.HTTP_REFERER}}">Go Back</a>
     </form>
 </div>
 

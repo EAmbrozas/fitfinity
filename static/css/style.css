@@ -10,6 +10,25 @@ body {
     background-color: black;
 }
 
+/* Links and buttons */
+.back {
+    color: orange;
+    text-decoration: none;
+    margin-bottom: 50px;
+    display: block;
+    bottom: 200px;
+}
+
+.up {
+    color: orange;
+    position: fixed;
+    margin-left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    bottom: 70px;
+    font-size: 25px;
+}
+
 /* Fonts */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
@@ -331,6 +350,7 @@ td {
 .edit-comment {
     color: orange;
     float: right;
+    margin-left: 20px;
 }
 
 .delete-btn {
@@ -380,6 +400,16 @@ input {
     font-weight: 500;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+}
+
+
+.update-form textarea {
+    display: block;
+    margin: 20px auto;
+}
+
+.update-form label {
+    display: none;
 }
 
 /* Footer */

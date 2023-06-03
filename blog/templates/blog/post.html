@@ -12,6 +12,7 @@
 </div>
 
 <div class="post-wrapper">
+    <a class="back" href="{{request.META.HTTP_REFERER}}"><i class="fa-solid fa-chevron-left"></i> Go Back</a>
     <p>{{post.content | safe}}</p>
 </div>
 
@@ -43,5 +44,7 @@
     </div>
 </div>
 {% endif %}
+
+<a class="up" href="#nav"><i class="fa-solid fa-circle-up"></i></a>
 
 {% endblock content %}

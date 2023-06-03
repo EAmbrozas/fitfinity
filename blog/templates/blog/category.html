@@ -12,6 +12,7 @@
 </div>
 
 <div class="post-wrapper">
+    <a class="back" href="{{request.META.HTTP_REFERER}}"><i class="fa-solid fa-chevron-left"></i> Go Back</a>
     <div class="posts">
         {% for post in posts %}
             <div class="post-card">
