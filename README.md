@@ -20,6 +20,7 @@ ___
         - [Typography](#typography)
         - [Colour Scheme](#color)
         - [Imagery](#imagery)
+    - [Agile](#agile)
     - [Wireframes](#wireframes)
 - [Teschnologies](#technologies)
     - [Languages Used](#languages)
@@ -28,6 +29,7 @@ ___
     - [Lighthouse](#lighthouse)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
+    - [Manual Testing](#manual)
 - [Deployment](#deployment)
     - [Version Controle](#version-controle)
     - [Heroku](#heroku)
@@ -169,7 +171,19 @@ ___
     </li>
 </ul>
 
-<div id="Wireframes">
+<div id="agile">
+
+## Agile
+___
+</div>
+
+<p>The development process was managed utilizing an agile methodology through GitHub projects.</p>
+
+![Agile image](readme/agile.png)
+
+
+
+<div id="wireframes">
 
 ## Wireframes
 ___
@@ -297,6 +311,170 @@ ___
 </div>
 
 ![CSS validation results](readme/css-validation.png)
+
+<div id="manual">
+
+### Manual Testing
+</div>
+
+<p>The following section provides a detailed description of the manual testing procedure and results:</p>
+
+<table>
+<tr>
+    <th>Page / Section</th>
+    <th>Element</th>
+    <th>Action</th>
+    <th>Expected Result</th>
+    <th>Pass / Fail</th>
+</tr>
+<tr>
+    <td>Navbar</td>
+    <td>Login</td>
+    <td>Click</td>
+    <td>Redirect to login page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Navbar</td>
+    <td>Register</td>
+    <td>Click</td>
+    <td>Redirect to register page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Navbar</td>
+    <td>Logout</td>
+    <td>Click</td>
+    <td>Redirect to logout page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Login Form</td>
+    <td>Sign in</td>
+    <td>Click</td>
+    <td>Loges in user</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Login Form</td>
+    <td>Sign up</td>
+    <td>Click</td>
+    <td>Redirect to register page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Register Form</td>
+    <td>Sign up</td>
+    <td>Click</td>
+    <td>Register user and redirect to home page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Logout Form</td>
+    <td>Sign out</td>
+    <td>Click</td>
+    <td>Log out user</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Home Page</td>
+    <td>Category Card</td>
+    <td>Click</td>
+    <td>Redirect user to selected category</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Home Page</td>
+    <td>Category Card</td>
+    <td>Mouse hover</td>
+    <td>Image zoom in</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Category Page</td>
+    <td>Go Back</td>
+    <td>Click</td>
+    <td>Redirect user to previous page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Category Page</td>
+    <td>Post Card</td>
+    <td>Mouse hover</td>
+    <td>Image zoom in</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Category Page</td>
+    <td>Post Card</td>
+    <td>Click</td>
+    <td>Redirect user to selected post</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Post Page</td>
+    <td>Go Back</td>
+    <td>Click</td>
+    <td>Redirect user to previous page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Post Page</td>
+    <td>Arrow up icon</td>
+    <td>Click</td>
+    <td>Brings user to the top of the page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Comment Form</td>
+    <td>Submit</td>
+    <td>Click</td>
+    <td>Adds new post</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Comment</td>
+    <td>Bin icon</td>
+    <td>Click</td>
+    <td>Redirect user to delete page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Comment</td>
+    <td>Edit icon</td>
+    <td>Click</td>
+    <td>Redirect user to update page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Delete form</td>
+    <td>Go Back</td>
+    <td>Click</td>
+    <td>Redirect user to previous page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Delete form</td>
+    <td>Confim</td>
+    <td>Click</td>
+    <td>Deletes comment</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Update form</td>
+    <td>Go Back</td>
+    <td>Click</td>
+    <td>Redirect user to previous page</td>
+    <td>Pass</td>
+</tr>
+<tr>
+    <td>Update form</td>
+    <td>Submit</td>
+    <td>Click</td>
+    <td>Updates comment</td>
+    <td>Pass</td>
+</tr>
+</table>
 
 
 <div id="deployment">
